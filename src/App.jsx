@@ -1,10 +1,17 @@
 import './App.css'
+import { Outlet } from 'react-router-dom'
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
   return (
     <main>
-      <h2>This is oClub website</h2>
+      <Header />
+      <div>
+        <Outlet />
+      </div>
+      <Footer />
     </main>
   )
 }

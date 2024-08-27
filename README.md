@@ -4,3 +4,7 @@
 
 * tailwindCSS
 
+**NPM Packages**
+
+* react-helmet-async
+* prop-types
