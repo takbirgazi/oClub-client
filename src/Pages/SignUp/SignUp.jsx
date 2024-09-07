@@ -1,14 +1,12 @@
-import signUp from "../../assets/images/signUp.png"
+import { NavLink } from "react-router-dom";
+
 const SignUp = () => {
     return (
-        <div className="max-w-screen-xl mx-auto p-5">
-            <div className="flex gap-5 justify-center items-center">
-                <div className="w-full md:w-1/2 rounded-md  flex justify-end items-center">
-                    <img className="h-full w-96" src={signUp} alt="" />
-                </div>
-                <div className="w-full md:w-1/2 border rounded-lg border-red-800 p-5">
+        <div className="max-w-screen-xl mx-auto p-5 min-h-screen flex items-center justify-center">
+            <div className="flex gap-5 justify-center items-center w-full">
+                <div className="w-full md:w-10/12 mx-auto border rounded-lg border-red-800 p-5">
                     <h2 className="text-4xl font-bold text-gray-900 pb-5">Sign Up</h2>
-                    <div>
+                    <div className="flex flex-col gap-2">
                         <form className="flex flex-col gap-3" action="">
                             <div className="flex flex-col gap-1">
                                 <label htmlFor="fullName">Name:</label>
@@ -44,6 +42,7 @@ const SignUp = () => {
                                 <input className="border border-red-500 rounded-md p-2 outline-none cursor-pointer bg-red-800 text-gray-100 font-bold" type="submit" name="phoneNumber" value="Sign Up"/>
                             </div>
                         </form>
+                        <NavLink className="text-blue-500" to="/login">I have an account</NavLink>
                     </div>
                 </div>
             </div>

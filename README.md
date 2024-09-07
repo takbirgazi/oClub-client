@@ -8,3 +8,4 @@
 
 * react-helmet-async
 * prop-types
+* react-icons

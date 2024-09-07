@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import watsAppIcon from "../../assets/images/watsappIcon.jpeg"
+import { FaWhatsapp } from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
+
 
 const DonorListCard = ({ donorInfo }) => {
     const { name, image, bloodGroup, lastDonate, location, phone } = donorInfo;
@@ -13,10 +15,10 @@ const DonorListCard = ({ donorInfo }) => {
                     <p><span className="font-semibold">Last Donate:</span> <span>{lastDonate} (3 Month 23 Days ago)</span></p>
                     <p><span className="font-semibold">BMI:</span> <span>5.4</span></p>
                     <p><span className="font-semibold">Location:</span> <span>{location}</span></p>
-                    <p className="flex gap-1 items-center"><img className="h-7 w-7" src={watsAppIcon} alt="" /><span className="font-bold ">{phone}</span></p>
+                    <p className="flex gap-1 items-center"><FaWhatsapp /><span className="font-bold ">{phone}</span></p>
                 </div>
                 <div className="flex items-center justify-center py-3">
-                    <a href={`tel:${phone}`} className="bg-red-900 text-gray-100 font-semibold px-4 py-1 rounded-md">Call Now</a>
+                    <a href={`tel:${phone}`} className="bg-red-900 text-gray-100 font-semibold py-1 px-3 rounded-md flex items-center gap-1"><FiPhoneCall />Call</a>
                 </div>
             </div>
         </div>
@@ -26,5 +28,5 @@ const DonorListCard = ({ donorInfo }) => {
 export default DonorListCard;
 
 DonorListCard.propTypes = {
-    donorInfo: PropTypes.obj
+    donorInfo: PropTypes.object,
 }
