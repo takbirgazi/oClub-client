@@ -1,5 +1,10 @@
 # oClub
 
+**Use Instruction**
+* npm install
+* create .env file and insert variables
+    * VITE_base_api
+
 **CSS Framework**
 
 * tailwindCSS
