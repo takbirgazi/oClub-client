@@ -15,7 +15,6 @@ const SignUp = () => {
             .then(res => console.log(res.data))
     }
 
-
     return (
         <div className="max-w-screen-xl mx-auto p-5 min-h-screen flex items-center justify-center">
             <div className="flex gap-5 justify-center items-center w-full">
