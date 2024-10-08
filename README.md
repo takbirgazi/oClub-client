@@ -15,3 +15,4 @@
 * prop-types
 * react-icons
 * axios
+* react-hot-toast
